@@ -2,7 +2,8 @@
 
 
 
-BUILDIMAGE="$(docker-compose -f docker-compose.yml up -d)"
+#BUILDIMAGE="$(docker-compose -f docker-compose.yml up -d)"
+BUILDIMAGE="$(docker-compose up -d)"
 REGISTRY=shariftest
 LOCALIMAGE=$(docker-compose images | awk '$1 ~ /shariftest/ { print $2 }')
 LOCAL_TAG=$(docker-compose images | awk '$1 ~ /shariftest/ { print $3 }')
