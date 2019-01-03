@@ -4,8 +4,8 @@
 
 BUILDIMAGE="$(docker-compose -f docker-compose.yml up -d)"
 REGISTRY=shariftest
-LOCALIMAGE=$(docker-compose images | awk '$1 ~ /sharif-testing/ { print $2 }')
-LOCAL_TAG=$(docker-compose images | awk '$1 ~ /sharif-testing/ { print $3 }')
+LOCALIMAGE=$(docker-compose images | awk '$1 ~ /shariftest/ { print $2 }')
+LOCAL_TAG=$(docker-compose images | awk '$1 ~ /shariftest/ { print $3 }')
 REMOTE_IMAGE=test
 REMOTE_TAG=04
 
