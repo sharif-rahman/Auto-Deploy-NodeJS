@@ -1,18 +1,19 @@
 
 #FROM node:carbon
-FROM node:8
+#RUN npm install -g nodemon
 
-RUN npm install -g nodemon
-
+FROM node:argon
+ 
+# Create app directory
+RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-
+ 
+# Install app dependencies
 COPY package*.json /usr/src/app/
-
-RUN npm -y install
-#mv /usr/src/app/node_modules /node_modules
-
+RUN npm install
+ 
+# Bundle app source
 COPY . /usr/src/app
-
+ 
 EXPOSE 3000
-
-CMD [ "node", "./bin/www" ]
+CMD [ "npm", "start" ]
