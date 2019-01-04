@@ -2,8 +2,13 @@
 
 
 
-#BUILDIMAGE="$(docker-compose -f docker-compose.yml up -d)"
-BUILDIMAGE="$(docker-compose up -d)"
+BUILDIMAGE="$(docker-compose -f /var/jenkins_home/workspace/docker-build-test/mywebsite/docker-compose.yml up -d)"
+#BUILDIMAGE="$(docker-compose up -d)"
+
+docker-compose down
+
+docker-compose up
+
 REGISTRY=shariftest
 LOCALIMAGE=$(docker-compose images | awk '$1 ~ /shariftest/ { print $2 }')
 LOCAL_TAG=$(docker-compose images | awk '$1 ~ /shariftest/ { print $3 }')
