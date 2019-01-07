@@ -13,3 +13,7 @@ Technologies and tools:
   - checks the docker registery login
   - It creates the Tag
   - It pusshed the new images to registery.
+  
+# RUN the shell script
+
+./main.sh
