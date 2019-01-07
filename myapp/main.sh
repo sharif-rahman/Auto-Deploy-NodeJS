@@ -6,7 +6,8 @@
 BUILDIMAGE="$(docker-compose -f $WORKSPACE/myapp/docker-compose.yml up -d)"
 #BUILDIMAGE="$(docker-compose up -d)"
 REGISTRY=shariftest
-LOCALIMAGE=$(sudo docker-compose images | awk '$1 ~ /shariftest/ { print $2 }')
+#LOCALIMAGE=$(sudo docker-compose images | awk '$1 ~ /shariftest/ { print $2 }')
+LOCALIMAGE=$(docker-compose images|awk '$1~/shariftest/{ print $2 }')
 LOCAL_TAG=$(sudo docker-compose images | awk '$1 ~ /shariftest/ { print $3 }')
 REMOTE_IMAGE=test
 REMOTE_TAG=04
