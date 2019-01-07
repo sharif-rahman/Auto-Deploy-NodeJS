@@ -1,15 +1,15 @@
 # Views template layouting
 
-Create the layout of the resume template and add some interactive to it
+Create the web app
 
 Technologies and tools:
 
-DevOps (working with the template)
-*HTML
-**Semantic
-**Accessibility
-Responsive
-**CSS
-###Bootstrap 4
-##Javascript
-####ES6
+- Dockerfile 
+ - Install the npm 
+- docker-compose
+ - Container creation 
+- main.sh
+ - runs the docker-compose
+ - checks the docker registery login
+ - It creates the Tag
+ - It pusshed the new images to registery.
