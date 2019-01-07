@@ -1,10 +1,10 @@
 
 Info
 
-### sharif-project/DockerfilesInfo/Dockerfile-jenkinsIMG: This files create the jenkins Image.
+### DockerfilesInfo/Dockerfile-jenkinsIMG: This files create the jenkins Image.
 #Jenkins image Creation steps to be follow
 
-cp sharif-project/DockerfilesInfo/Dockerfile-jenkinsIMG Dockerfile
+cp DockerfilesInfo/Dockerfile-jenkinsIMG Dockerfile
 
 #IMAGE: 
 
