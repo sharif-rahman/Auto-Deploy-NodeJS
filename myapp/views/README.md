@@ -1,4 +1,4 @@
-# Resume template layouting
+# Views template layouting
 
 Create the layout of the resume template and add some interactive to it
 
