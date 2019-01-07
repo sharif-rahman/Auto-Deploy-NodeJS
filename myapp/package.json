@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-app",
+  "version": "1.0.0",
+  "description": "nodejs app for testing",
+  "author": "Sharif <sharif@example.com>",
+  "license": "MIT",
+  "main": "app.js",
+  "keywords": [
+    "nodejs",
+    "bootstrap",
+    "express"
+  ],
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
