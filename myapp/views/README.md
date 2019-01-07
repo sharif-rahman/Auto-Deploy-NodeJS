@@ -1,4 +1,4 @@
-# Resume template layouting
+# Views template layouting
 
 Create the layout of the resume template and add some interactive to it
 
@@ -13,5 +13,3 @@ Technologies and tools:
   - Bootstrap 4
 - Javascript
   - ES6
-
-![Resume Template](https://github.com/OceanJS-JOB/Resume-template/blob/master/resume.png)
