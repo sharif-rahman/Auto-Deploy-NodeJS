@@ -2,7 +2,7 @@
 
 - DockerfilesInfo/Dockerfile-jenkinsIMG: 
   - This files create the jenkins Image.
-  # Jenkins image Creation steps to be follow
+# Jenkins image Creation steps to be follow
 
 - cp DockerfilesInfo/Dockerfile-jenkinsIMG Dockerfile
 - docker build -t Image-name .
