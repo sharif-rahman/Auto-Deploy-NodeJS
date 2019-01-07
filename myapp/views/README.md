@@ -13,5 +13,3 @@ Technologies and tools:
   - Bootstrap 4
 - Javascript
   - ES6
-
-![Resume Template](https://github.com/OceanJS-JOB/Resume-template/blob/master/resume.png)
