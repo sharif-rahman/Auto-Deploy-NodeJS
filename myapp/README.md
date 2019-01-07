@@ -17,3 +17,23 @@ Technologies and tools:
 # RUN the shell script
 
 ./main.sh
+
+# Importent Information 
+- BUILDIMAGE="$(docker-compose -f $WORKSPACE/myapp/docker-compose.yml up -d)"
+  - The Command execution for docker-compose file to create the provided image.
+  
+- LOCALIMAGE=$(docker-compose -f $WORKSPACE/myapp/docker-compose.yml images | awk '$1 ~ /shariftest/ { print $2 }')
+  - The Command execution for docker-compose file to display the image name.
+  
+- LOCAL_TAG=$(docker-compose -f $WORKSPACE/myapp/docker-compose.yml images | awk '$1 ~ /shariftest/ { print $3 }')
+ - The Command execution for docker-compose file to display the images Tag.
+
+- LOGIN="$(docker login -u shariftest -p 08sharif )"
+ - The Command execution for docker registery Login.
+
+- TAG="$(docker tag ${LOCALIMAGE}:${LOCAL_TAG}  ${REGISTRY}/${REMOTE_IMAGE}:${REMOTE_TAG} )"
+  - The Command execution for docker to create a new tag from the existing one.
+
+- PUSH="$(docker push ${REGISTRY}/${REMOTE_IMAGE}:${REMOTE_TAG} )"
+  - The Command execution for docker registery push | push the new Tag Images.
+
