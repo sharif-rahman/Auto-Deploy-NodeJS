@@ -1,4 +1,4 @@
-# APP Info
+# APP Information
 
 - DockerfilesInfo/Dockerfile-jenkinsIMG: 
   - This files create the jenkins Image.
