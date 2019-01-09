@@ -22,3 +22,11 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 368830dd102c        myapp_app           "node app.js"            35 minutes ago      Up 35 minutes       0.0.0.0:3000->3000/tcp              greentube
 e769eba545bc        docker-jenkins      "/sbin/tini -- /us..."   19 hours ago        Up 19 hours         0.0.0.0:8080->8080/tcp, 50000/tcp   docker-jenkins
 ```
+
+### Auto Run Jenkins Job with GITWebhook.
+
+- We need internet access before we do.
+- This is an example need to add this on git project setting on webhooks
+```
+http://192.168.142.175:8080/job/docker-build-test/buildWithParameters?token=somethingChanged&CONTAINER_NAME=sharif&IMAGE_NAME=sharif&VERSION_TAGS=1.12
+```
