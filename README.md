@@ -9,7 +9,7 @@ docker container run -d --restart unless-stopped --name docker-jenkins -p 8080:8
 
 ### DockerfilesInfo/Dockerfile-NODEJS: 
   - This file is to create the node application. 
-  - Just RUN the main.sh file it will auto  create the docker cotainer with running json application and even it push the images to provide [DOCKER-HUB] (https://cloud.docker.com/repository/list). Docker ID: shariftest
+  - Just RUN the main.sh file it will auto  create the docker cotainer with running json application and even it push the images to provide [DOCKER-HUB](https://cloud.docker.com/repository/list). Docker ID: shariftest
 ```
 ./myapp/main.sh
 ```
@@ -23,7 +23,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 e769eba545bc        docker-jenkins      "/sbin/tini -- /us..."   19 hours ago        Up 19 hours         0.0.0.0:8080->8080/tcp, 50000/tcp   docker-jenkins
 ```
 
-### Auto Run Jenkins Job with GITWebhook.
+### Auto Run Jenkins Job with GITWebhooks.
 
 - We need internet access before we do.
 - This is an example need to add this on git project setting on webhooks
