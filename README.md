@@ -16,7 +16,7 @@ docker container run -d --restart unless-stopped --name docker-jenkins -p 8080:8
 ## jenkins-build.sh
 - This bash script will modify the version tag, container name, & image name as follows.
 
-Output:
+Test Output:
 ```
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES
 368830dd102c        myapp_app           "node app.js"            35 minutes ago      Up 35 minutes       0.0.0.0:3000->3000/tcp              greentube
