@@ -1,6 +1,6 @@
 # APP Information
 
-##$ DockerfilesInfo/Dockerfile-jenkinsIMG: Jenkins image Creation steps to be follow
+### DockerfilesInfo/Dockerfile-jenkinsIMG: Jenkins image Creation steps to be follow
 ```
 cp DockerfilesInfo/Dockerfile-jenkinsIMG Dockerfile
 docker build -t Image-name .
