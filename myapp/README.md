@@ -1,4 +1,4 @@
-# Views template layouting
+# Current Page Template layouting
 ## Create the web app
 ### Technologies and tools:
 - Dockerfile 
